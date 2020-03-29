@@ -1,0 +1,203 @@
+.movieContainer  {
+    width:100%;
+    margin: 20px auto;
+    padding: 40px;
+    /* border: 1px solid red; */
+    height:auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.ratedMoviesContainer {
+
+    width:100%;
+    margin: 20px auto;
+    padding: 40px;
+    /* border: 1px solid red; */
+    height:auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+
+}
+
+#elContainer {
+    width:160px;
+    height:200px;
+    border: 1px solid black; 
+    text-align: center; 
+    padding-bottom: 10px;
+      
+}
+
+.elContainer {
+    width:160px;
+    height:200px;
+    border: 1px solid black; 
+    text-align: center; 
+    padding-bottom: 10px;  
+
+}
+
+#movieImg {
+    widows: 160px;
+    height: 160px;
+    border: 1px solid yellow;
+    margin: 0;
+
+}
+
+#movieName {
+    font-size: 20px;
+    color: brown;
+    margin: 0;
+
+}
+#movieYear {
+    font-size: 20px;
+}
+
+
+.card {
+
+    width: 300px;
+    height:500px;
+
+}
+
+.card-img-top {
+    width: 100%;
+    height: 380px;
+}
+
+.jumbotron {
+    background-image: url(joker.jpg);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    color:white;
+    margin-top: 20px;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.navbar-brand {
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+.navbar {
+    padding: 20px 130px 20px 130px;
+    margin-bottom: 20px;
+}
+
+
+.checked {
+    color: orange;
+
+}
+
+.fa {
+    width: 6px;
+}
+
+.starContainer {
+    width: 100px;
+    height: 20px;
+    /* border: 1px solid yellow; */
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 8px;
+
+}
+
+.rateMovie {
+    margin-left: 70px;
+    cursor: pointer;
+
+}
+
+.rateMovie:hover {
+    color: blue;
+
+}
+
+/* star rating css html */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    /* border: 1px solid #cccccc; */
+    float: left;
+    height: 30px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:0.8em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:15px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+.rateNumber {
+    color: #343A40;
+    font-weight: bold;
+    text-align: end;
+    padding-bottom: 10px;
+}
+
+.redNumber {
+
+    color: #c42336;
+}
+
+
+/* #error1 {
+    width: 400px;
+} */
+
+#error {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
